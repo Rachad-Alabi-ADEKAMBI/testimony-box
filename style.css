@@ -1,0 +1,77 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/*règles de la div principale*/
+.row{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 15% auto;
+}
+
+.row-link{
+    background: black;
+    border: 1px black solid;
+    height: 60px;
+    display: table;
+    margin-bottom: 20px;
+    padding-left: 120px;
+    cursor: pointer;
+}
+
+.row-link-text{
+    color: white;
+    font-size: 1.5em; /*Modifier la taille du texte CLIQUEZ ICI*/
+   display: table-cell;
+   vertical-align: middle;
+   margin-left: 100px;
+}
+
+i{
+    color: white;
+    font-size: 1em;
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.row-text{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.text{
+   margin: 0 auto ;
+}
+
+.title{
+    font-size: 1.4em; /*Modifier la taille du texte principal ici*/
+    margin: 0 auto auto 10px;
+}
+
+.author{
+    font-size: 1.2em; /*Modifier la taille du nom de l'auteur ici*/
+    margin: 5px auto auto 10px;
+}
+
+/*règles pour le responsive*/
+@media screen and (min-width: 350px) and (max-width: 767px){
+    .row{
+        width: 320px;
+    }
+
+    .row-link{
+        padding-left: 90px;
+    }
+
+}
